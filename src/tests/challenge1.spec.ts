@@ -6,13 +6,6 @@ describe("Challenge 1", () => {
         const challenge1 = new Challenge1(arrayChallenge1);
         challenge1.findMissingNumbers = jest.fn().mockReturnValue([5, 6]);
         expect(challenge1.findMissingNumbers()).toStrictEqual([5, 6]);
-        /* const validateSpy = jest.spyOn(challenge1, "findMissingNumbers");
-        const trueRule = jest.fn(() => [5,6]);
-        const result = challenge1.findMissingNumbers();
-        expect(typeof challenge1.findMissingNumbers).toBe("function");
-        expect(validateSpy).toHaveBeenCalled();
-        expect(validateSpy).toHaveReturnedWith(trueRule);
-        expect(result).toBeInstanceOf(Array); */
     });
     test("Find missing numbers in [1,1]", () => {
         const arrayChallenge1 = [1, 1];
